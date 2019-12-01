@@ -1,4 +1,4 @@
-### Wrike Test
+Wrike Test
 # Test case scenario:
 
 * Open url: wrike.com;
