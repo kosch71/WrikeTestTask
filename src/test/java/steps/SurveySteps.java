@@ -17,18 +17,18 @@ public class SurveySteps {
 
     public SurveySteps(WebDriver driver) {
         this.driver = driver;
-        page = new SurveyPage(this.driver);
+        this.page = new SurveyPage(this.driver);
     }
 
 
     @Step("Fill the survey")
     public SurveySteps setAnswers(String msg) {
         Random random = new Random();
-        page.options.get(random.nextInt(2)).click();
-        page.options.get(random.nextInt(5) + 2).click();
-        page.options.get(random.nextInt(3) + 7).click();
-        if (page.otherInput.isDisplayed()) {
-            page.otherInput.sendKeys(msg);
+        this.page.options.get(random.nextInt(2)).click();
+        this.page.options.get(random.nextInt(5) + 2).click();
+        this.page.options.get(random.nextInt(3) + 7).click();
+        if (this.page.otherInput.isDisplayed()) {
+            this.page.otherInput.sendKeys(msg);
         }
         return this;
     }
@@ -36,8 +36,8 @@ public class SurveySteps {
     @Step("Submit the survey")
     public SurveySteps submitSurvey() {
         new WebDriverWait(driver, TIMEOUT)
-                .until(ExpectedConditions.visibilityOf(page.surveySubmit));
-        page.surveySubmit.click();
+                .until(ExpectedConditions.visibilityOf(this.page.surveySubmit));
+        this.page.surveySubmit.click();
         return this;
     }
 
@@ -45,7 +45,7 @@ public class SurveySteps {
     public void checkSuccess() {
         new WebDriverWait(driver, TIMEOUT)
                 .withMessage("Submit failed")
-                .until(ExpectedConditions.visibilityOf(page.message));
+                .until(ExpectedConditions.visibilityOf(this.page.message));
     }
 
 

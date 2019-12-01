@@ -13,9 +13,6 @@ public class MainPage extends Page{
     @FindBy(xpath = "//*[contains(@class,'wg-header__sticky-mainmenu')]//*[contains(@class,'wg-header__free-trial-button')]")
     public WebElement startButton;
 
-    @FindBy(xpath = "//*[contains(@class,'wg-banner__close')]")
-    public WebElement closeBanner;
-
     @FindBy(xpath = "//*[contains(@class,'modal-form-trial__input')]")
     public WebElement emailInput;
 

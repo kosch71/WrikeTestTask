@@ -27,11 +27,11 @@ public class MainTest {
 
     @Before
     public void prepare() {
-        driver = ChromeConfig.ChromeDriver();
-        mainSteps = new MainSteps(driver);
-        surveySteps = new SurveySteps(driver);
-        email = generateRandomString(50) + POSTFIX;
-        otherMessage = generateRandomString(20);
+        this.driver = ChromeConfig.ChromeDriver();
+        this.mainSteps = new MainSteps(this.driver);
+        this.surveySteps = new SurveySteps(this.driver);
+        this.email = generateRandomString(50) + POSTFIX;
+        this.otherMessage = generateRandomString(20);
     }
 
 
@@ -41,13 +41,13 @@ public class MainTest {
     @Feature("Getting started test")
     @Story("Email and Q&A test")
     public void emailAndSurveyTest() {
-        mainSteps
+        this.mainSteps
                 .openMain()
                 .clickGetStarted()
-                .typeEmail(email)
+                .typeEmail(this.email)
                 .submitEmail();
-        surveySteps
-                .setAnswers(otherMessage)
+        this.surveySteps
+                .setAnswers(this.otherMessage)
                 .submitSurvey()
                 .checkSuccess();
     }
@@ -58,17 +58,17 @@ public class MainTest {
     @Feature("Footer test")
     @Story("Twitter link and data test")
     public void twitterTest() {
-        mainSteps
+        this.mainSteps
                 .openMain()
                 .checkLink();
-        mainSteps
+        this.mainSteps
                 .checkIcon();
     }
 
 
     @After
     public void quit() {
-        driver.quit();
+        this.driver.quit();
     }
 
 }
