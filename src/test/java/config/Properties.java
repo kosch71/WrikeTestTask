@@ -5,7 +5,7 @@ public class Properties {
     public static final String CHROME_PATH = "src/main/resources/chromedriver";
     public static final String CHROME_SYSTEM_PROPERTY = "webdriver.chrome.driver";
     public static final String WRIKE_URL = "https://www.wrike.com/";
-    public static final String POSTFIX = "+wpt@wriketask.qaa";
+    public static final String POSTFIX = "wpt@wriketask.qaa";
     public static final String RESEND_URL = "https://www.wrike.com/resend/";
     public static final String ICON_URL = "content/themes/wrike/dist/img/sprite/vector/footer-icons.symbol.svg?v2#twitter";
     public static final String TWITTER_URL = "https://twitter.com/wrike";
