@@ -15,4 +15,20 @@ Test case scenario:
 
 * Create results report using allure plugin (by maven).
 
-(You may close all needless tooltips on your way. If website has different behavior on some pages from time to time, you need to implement all these pages and use necessary one depending on URL.)
+# Stack of technologies for implementation:
+
+* Platform: java 11
+
+* Build and run: maven
+
+* Test framework: junit4
+
+* UI test: selenium 3 (without wrappers)
+
+* Pattern: pageObject (test -> steps -> pages)
+
+* Reporting: allure plugin
+
+* Selector: xpath (should be short and stable)
+
+# Allure reports
