@@ -1,5 +1,5 @@
-Wrike Test
-# Test case scenario:
+# Wrike Test
+## Test case scenario:
 
 * Open url: wrike.com;
 
@@ -15,7 +15,7 @@ Wrike Test
 
 * Create results report using allure plugin (by maven).
 
-# Stack of technologies for implementation:
+## Stack of technologies for implementation:
 
 * Platform: java 11
 
@@ -31,7 +31,7 @@ Wrike Test
 
 * Selector: xpath (should be short and stable)
 
-# Allure reports
+## Allure reports
 
 * [Footer test](https://github.com/kosch71/WrikeTestTask/blob/master/src/main/resources/Allure/AllureReport-1.png)
 
