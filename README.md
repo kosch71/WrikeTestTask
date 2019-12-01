@@ -33,6 +33,6 @@ Test case scenario:
 
 # Allure reports
 
-* [Footer test](https://github.com/kosch71/WrikeTestTask/blob/master/src/main/resources/Allure/AllureReport-1.png
+* [Footer test](https://github.com/kosch71/WrikeTestTask/blob/master/src/main/resources/Allure/AllureReport-1.png)
 
 * [Getting started test](https://github.com/kosch71/WrikeTestTask/blob/master/src/main/resources/Allure/AllureReport.png)
